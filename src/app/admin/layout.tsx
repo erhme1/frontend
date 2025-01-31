@@ -13,7 +13,6 @@ export default function RootLayout({
 }>) {
 	return (
 		<div>
-			<ClerkProvider>
 				<SignedOut>
 					<SignInButton />
 				</SignedOut>
@@ -24,7 +23,6 @@ export default function RootLayout({
 						{children}
 					</div>
 				</SignedIn>
-			</ClerkProvider>
 		</div>
 	);
 }

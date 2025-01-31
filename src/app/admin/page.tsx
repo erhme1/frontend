@@ -11,12 +11,6 @@ type OrderItem = {
 };
 
 export default function Home() {
-	const [foodOrderItems, setOrderitems] = useState<OrderItem[]>([]);
-
-	const { isLoading, data: foods, onPost } = useAuthFetch("food");
-
-	const clickOrder = () => {
-		onPost("food-order", { foodOrderItems, totalPrice: 1000 });
-	};
-	return <div>admin page</div>;
+	
+	return <div className="w-[100%] bg-primary-foreground flex flex-wrap items-center text-center justify-center text-4xl">admin page</div>;
 }
