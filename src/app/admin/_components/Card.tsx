@@ -17,7 +17,7 @@ export const CardComp = ({ food, id, setFoods }: any) => {
           <span className="text-red-500 font-semibold text-[14px]">
             {food.name || "Unnamed Food"}
           </span>
-          <span className="text-[12px] font-semibold">
+          <span className="text-[12px] font-semibold ml-2">
             ${food.price ? food.price.toFixed(2) : "0.00"}
           </span>
         </div>
